@@ -1,0 +1,10 @@
+
+% for prog in progs:
+% if between:
+${between}
+EXTCALL "${prog['name']}${prog['suffix']}"
+% else:
+EXTCALL "${prog['name']}${prog['suffix']}"
+% endif
+% endfor
+M30

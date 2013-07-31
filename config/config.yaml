@@ -1,0 +1,20 @@
+system:
+    t1:
+        name: 西门子
+        template: templates/西门子.txt
+        suffix: 0
+        limitSuffix: .MPF
+        default:
+            name: ALL_IN_ONE
+            between: M00
+        
+    t2:
+        name: 海德汉
+        template: templates/海德汉.txt
+        suffix: 1
+        limitSuffix: .H
+        default:
+            name: ALL_IN_ONE
+            between: M00
+ 
+

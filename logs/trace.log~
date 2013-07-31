@@ -1,0 +1,36 @@
+
+2013-06-26 13:35:21,909 ERROR NCString.py onOK 444 43173 140220405524288 MainThread: Build template failed! 'ListItem' object has no attribute 'endswith'
+Traceback (most recent call last):
+  File "NCString.py", line 444, in onOK
+    for row in range(count):
+  File "NCString.py", line 564, in generate
+    shutil.copyfile(os.path.join(item[0], filename), os.path.join(dst,filename))
+  File "/usr/lib/python2.7/posixpath.py", line 77, in join
+    elif path == '' or path.endswith('/'):
+AttributeError: 'ListItem' object has no attribute 'endswith'
+2013-06-26 13:40:13,501 ERROR NCString.py onOK 477 43209 140100422969152 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:11:39,544 ERROR NCString.py onOK 476 43610 139892603037504 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:11:58,970 ERROR NCString.py onOK 476 43610 139892603037504 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:17:10,085 ERROR NCString.py onOK 478 43734 140430477571904 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:19:53,747 ERROR NCString.py onOK 478 43773 140589412124480 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:19:59,594 ERROR NCString.py onOK 478 43773 140589412124480 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:22:21,128 ERROR NCString.py onOK 478 43818 140577178191680 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-06-26 14:24:03,214 ERROR NCString.py onOK 478 43818 140577178191680 MainThread: Open dst file failed!:exceptions must be old-style classes or derived from BaseException, not NoneType
+2013-07-27 22:28:00,768 ERROR NCString.py onOK 525 17369 139859195864896 MainThread: Build template failed! `/opt/gui/NCString/test.py` and `/opt/gui/NCString/test.py` are the same file
+Traceback (most recent call last):
+  File "NCString.py", line 523, in onOK
+    dstfile = generate(tpl, filename, suffix, needSuffix, between, src, dst, list(progs))
+  File "NCString.py", line 627, in generate
+    shutil.copyfile(os.path.join(item[0], filename), os.path.join(dst,filename))
+  File "/usr/lib/python2.7/shutil.py", line 69, in copyfile
+    raise Error("`%s` and `%s` are the same file" % (src, dst))
+Error: `/opt/gui/NCString/test.py` and `/opt/gui/NCString/test.py` are the same file
+2013-07-27 22:29:24,737 ERROR NCString.py onOK 525 17402 139879220467520 MainThread: Build template failed! `/opt/gui/NCString/test.py` and `/opt/gui/NCString/test.py` are the same file
+Traceback (most recent call last):
+  File "NCString.py", line 523, in onOK
+    dstfile = generate(tpl, filename, suffix, needSuffix, between, src, dst, list(progs))
+  File "NCString.py", line 629, in generate
+    shutil.copyfile(from_path, dst_path)
+  File "/usr/lib/python2.7/shutil.py", line 69, in copyfile
+    raise Error("`%s` and `%s` are the same file" % (src, dst))
+Error: `/opt/gui/NCString/test.py` and `/opt/gui/NCString/test.py` are the same file

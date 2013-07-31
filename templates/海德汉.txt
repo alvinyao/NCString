@@ -1,0 +1,11 @@
+BEGIN PGM ${filename} MM
+% for prog in progs:
+% if between:
+${between}
+CALL PGM ${prog['name']}${prog['suffix']}
+% else:
+CALL PGM ${prog['name']}${prog['suffix']}
+% endif
+% endfor
+M30
+END PGM ${filename} MM
